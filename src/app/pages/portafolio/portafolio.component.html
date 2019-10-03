@@ -1,0 +1,390 @@
+<!-- 1 -->
+<div align="center" *ngIf="productosService.cargando">
+  <h2>Cargando</h2>
+  <div class="loader loader--style1" title="0">
+    <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+      <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+        s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+        c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+        <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+          C22.32,8.481,24.301,9.057,26.013,10.047z">
+          <animateTransform attributeType="xml"
+            attributeName="transform"
+            type="rotate"
+            from="0 20 20"
+            to="360 20 20"
+            dur="0.5s"
+            repeatCount="indefinite"/>
+          </path>
+        </svg>
+      </div>
+      <p>Espere por favor</p>
+    </div>
+    <main class="main-content" style="height: 200% !important;">
+      <div id="manCategoria" class="col-lg-1 col-md-1 novisible" >
+          <div class="column-inner">
+            <div class="wpb_wrapper">
+              <div id="page-content-custom-menu">
+                <div class="shop-by-collections always-show">
+                  <div class="sidebar-collections">
+                    <div class="sdcollections-title sb-title">
+                      <i class="fa fa-list"></i>
+                    </div>
+                    <div class="sdcollections-content">
+                      <div class="menu-categorias-container">
+                        <ul class="menu-categorias sdcollections-list">
+                          <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/oveja.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/oveja.svg"> <span style="float: right;"> Oveja </span>
+                                   </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li style="width: 100%" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/caballo.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/caballo.svg">
+                                    Caballo
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/gorila.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/gorila.svg">
+                                    Changos
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div
+                                  class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/conejo.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/conejo.svg">
+                                    Conejo
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div
+                                  class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/elefante.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/elefante.svg">
+                                    Elefante
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div
+                                  class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/tiger.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/tigre.svg">
+                                    Felinos
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div
+                                  class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/jirafa.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/jirafa.svg">
+                                    Jirafa
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div
+                                  class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/leon.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/leon.svg">
+                                    Leon
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div
+                                  class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/oso.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/Oso.svg">
+                                    Oso
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div
+                                  class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/panda.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/panda.svg">
+                                    Panda
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div
+                                  class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/koala.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/koala.svg">
+                                    Koala
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div
+                                  class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/perro.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/perros.svg">
+                                    Perros
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div
+                                  class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/conejo.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/conejo.svg">
+                                    Cojejo
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/marinos.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/marinos.svg">
+                                    Marino
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/hippopotamo.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/hippopotamo.svg">
+                                    Hippopotamo
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children sdc-element vetical-menu1 site-nav--has-dropdown">
+                            <a href="#" class="site-nav__link">
+                              <img src="#" class="blank-featured-img" alt="">
+                              <div style="clear: both;"></div>
+                              <div class="element-main">
+                                <div
+                                  class="collection-area have-icons blank-featured-img">
+                                  <div class="collection-name">
+                                    <img src="../../../assets/img/ICONOS/unicornio.svg" style="width: 30px;"
+                                      alt="../../../assets/img/ICONOS/unicornio.svg">
+                                    Unicornios
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm-11 col-md-11 col-lg-11">
+        <div class="container" id="slide">
+          <div class="row">
+            <ul style="width: 600%;">
+              <li style="width: 16.6667%;">
+                <img src="https://dpeluche.com/backend/vistas/img/slide/slide1/fondo.jpg" alt="https://dpeluche.com/backend/vistas/img/slide/slide1/fondo.jpg">
+                  <div class="slideOpciones slideOpcion1">
+                    <div class="textosSlide" style="top:0%; left:0%; width:0%; right:0%">
+                      <h1 style="color:#333"></h1>
+                      <h2 style="color:#777"></h2>
+                      <h3 style="color:#888"></h3>
+                    <a href="#https://dpeluche.com/inicio">
+                      <button class="btn btn-default backColor text-uppercase" style="background: rgb(255, 0, 0); color: rgb(255, 255, 255);">
+                        CREAR CUENTA <span class="fa fa-chevron-right"></span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ol id="paginacion">
+              <li item="1"><span class="fa fa-circle"></span></li>
+            </ol>
+          </div>
+        </div>
+        <div class="ae-masonry-xs-2 ae-masonry-md-2 ae-masonry-xl-2">
+          <a href="https://dpeluche.com/sin-categoria" class="rk-item ae-masonry__item">
+          <img alt="sin-categoria" src="https://dpeluche.com/backend/vistas/img/banner/545978590a984.jpeg.jpg">
+            <div class="item-meta">
+              <h2>sin-categoria</h2>
+              <p>sin-categoria</p>
+            </div>
+          </a>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 tituloDestacado">
+              <h1><small>ARTÍCULOS NUEVOS </small></h1>
+            </div>
+             <div class="col-sm-12 col-xs-12">
+            <a href="#" >
+               <button class="btn btn-default backColor pull-right">
+                 VER MÁS <span class="fa fa-chevron-right"></span>
+              </button>
+            </a>
+          </div>
+        </div>
+       <div class="clearfix"></div>
+       <hr>
+       </div>
+        <div class="ae-masonry-xs-2 ae-masonry-md-4">
+         <ul *ngIf="!productosService.cargando" class="grid0">
+          <li *ngFor="let producto of productosService.productos" [routerLink]="['/item', producto.id ]"
+            class="img-thumbnail" style="padding:10px">
+            <p class="medidass"><span class="medidaNums">26 cm</span></p>
+            <p class="medidas"><span class="medidaNum">26 cm</span></p>
+            <figure>
+              <a [routerLink]="['/item', producto.id ]" class="pixelProducto">
+              <img src="https://dpeluche.com/backend/{{ producto.portada }}" alt="https://dpeluche.com/backend/{{ producto.portada }}" class="img-responsive">
+              </a>
+            </figure>
+            
+           <h4>
+           <p href="#" class="pixelProducto">
+             {{ producto.titulo }}
+           </p>
+           </h4>
+           <div class="col-xs-8 precio">
+            <h2>$ {{ producto.precio }}</h2>
+           </div>
+           <div class="col-xs-4 enlaces">
+            <div class="btn-group pull-right">
+             <button type="button" class="btn btn-default btn-xs deseos" idProducto="470" data-toggle="tooltip" title="Agregar a mi lista de deseos">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+             </button>
+             <a href="#" class="pixelProducto">
+             <button type="button" class="btn btn-default btn-xs" data-toggle="tooltip" title="Ver producto">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+             </button>
+             </a>
+            </div>
+           </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </main>
